@@ -61,7 +61,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 bg-light d-flex justify-content-center position-relative" style="border-bottom-right-radius: 2rem!important; border-top-right-radius: 2rem!important;">
-                    <img src="/img/gridbig.png" alt="" class="position-absolute top-0 start-100 translate-middle" style="z-index:-1; transform: translate(-75%,-25%)!important;">
+                    <img src="{{ asset('img/gridbig.png') }}" alt="" class="position-absolute top-0 start-100 translate-middle" style="z-index:-1; transform: translate(-75%,-25%)!important;">
                         <form class="mt-5 col-md-8">
                             <div class="mb-3">
                                 <input type="email" class="form-control p-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ID Pengguna">

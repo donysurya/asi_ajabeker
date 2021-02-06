@@ -8,7 +8,7 @@
     <div class="container mt-5 pt-5">
         <div class="row d-flex justify-content-center">
             <div class="col-md-9 position-relative bg-primary" style="border-radius:1rem;">
-                <img src="/img/gridbig.png" alt="" class="position-absolute top-50 start-0" style="z-index:-1; transform: translate(-30%,-50%)!important;">
+                <img src="{{ asset('img/gridbig.png') }}" alt="" class="position-absolute top-50 start-0" style="z-index:-1; transform: translate(-30%,-50%)!important;">
                 <h3 class="text-white p-4">Tentang IAKN</h3>
             </div>
         </div>
