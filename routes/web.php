@@ -14,41 +14,41 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('landing_page.index');
 });
 
 Route::get('/login', function () {
-    return view('login');
+    return view('landing_page.login');
 });
 
 Route::get('/contact_us', function () {
-    return view('contact_us');
+    return view('landing_page.contact_us');
 });
 
 Route::get('/faq', function () {
-    return view('faq');
+    return view('landing_page.faq');
 });
 
 Route::get('/visi_misi', function () {
-    return view('visi_misi');
+    return view('landing_page.visi_misi');
 });
 
 Route::get('/struktur_organisasi', function () {
-    return view('struktur_organisasi');
+    return view('landing_page.struktur_organisasi');
 });
 
 Route::get('/tentang', function () {
-    return view('tentang');
+    return view('landing_page.tentang');
 });
 
 Route::get('/anjab_abk', function () {
-    return view('anjab_abk');
+    return view('landing_page.anjab_abk');
 });
 
 Route::get('/bacaan', function () {
-    return view('bacaan');
+    return view('landing_page.bacaan');
 });
 
 Route::get('/berita', function () {
-    return view('berita');
+    return view('landing_page.berita');
 });
