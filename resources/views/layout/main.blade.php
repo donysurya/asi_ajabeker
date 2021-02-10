@@ -9,11 +9,6 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-
     <script src="https://kit.fontawesome.com/19b42cd13d.js" crossorigin="anonymous"></script>    
 
     <script src="{{ asset('js/jquery.js') }}"></script> 
@@ -68,16 +63,25 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <img src="{{ asset('img/logo2.png') }}" alt="">
                 </a>
+                                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
                 <div class="collapse navbar-collapse" id="navbarNav">
+
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item me-4">
-                            <a class="nav-link text-primary" href="{{ url('/faq') }}">FAQ</a>
+                            <a class="nav-link text-primary small" href="{{ url('/faq') }}">FAQ</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link text-primary small" href="{{ url('/contact_us') }}">Hubungi Kami</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-primary" href="{{ url('/contact_us') }}">Hubungi Kami</a>
+                            <a class="nav-link text-white btn btn-primary px-4" href="{{ url('/login') }}">Login</a>
                         </li>
                     </ul>
-                    <a href="{{ url('/login') }}" class="btn btn-primary ms-5 px-4">Login</a>
+                    
                 </div>
             </div>
         </nav>
@@ -88,6 +92,8 @@
                         <li class="nav-item me-4">
                             <a class="nav-link text-white" href="{{ url('/') }}">Beranda</a>
                         </li>
+                        
+                        {{-- Tidak digunakan
                         <li class="nav-item dropdown me-4">
                             <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Profil
@@ -97,7 +103,9 @@
                                 <li><a class="dropdown-item text-primary" href="{{ url('/struktur_organisasi') }}">Struktur Organisasi</a></li>
                                 <li><a class="dropdown-item text-primary" href="{{ url('/tentang') }}">Tentang IAKN</a></li>
                             </ul>
-                        </li>
+                        </li> 
+                        --}}
+
                         <li class="nav-item me-4">
                             <a class="nav-link text-white" href="{{ url('/berita') }}">Berita</a>
                         </li>
@@ -140,7 +148,7 @@
                     <p class="text-white mb-0"><i class="fa fa-envelope"></i> itstakn@gmail.com</p>
                     <p class="text-white mb-0"><i class="fa fa-envelope"></i> humas@stakn-palangkaraya.ac.id</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 mb-4">
                     <h4 class="text-white" style="justify-content: center; align-items: center; display: flex;">TENTANG IAKN</h4>
                     <center><img src="{{ asset('img/iakn.png') }}" alt="" width="180" height="180" class="mt-3"></center>
                 </div>
@@ -164,7 +172,15 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-   
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
 </body>
 </html>
