@@ -25,9 +25,9 @@
                 <i class="fab fa-gg-circle fa-2x align-items-center d-flex text-primary"></i>
             </div>
 
-            <div class="row d-flex justify-content-center align-items-center pt-5">
+            <div class="row gx-4 d-flex justify-content-center align-items-center pt-5">
 
-                <div class="col-md-5 pb-4">
+                <div class="col-md-5 pt-4">
 
                     <div id="accordion">
 
@@ -74,7 +74,7 @@
 
                 </div>  
                        
-                <div class="col-md-5">
+                <div class="col-md-5 pt-4">
                     
                     <div id="accordion">
 
